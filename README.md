@@ -6,7 +6,7 @@ pnpm handles workspace package discovery and local linking. Turbo runs tasks
 across those packages, understands the dependency graph, and caches build
 outputs so repeated commands stay fast.
 
-## Why Turbo Instead of Only npm Workspaces?
+## Why Turbo Instead of Only pnpm Workspaces?
 
 Turbo and npm workspaces solve different parts of the monorepo problem.
 
@@ -219,12 +219,12 @@ pnpm turbo build --filter=server
 
 ## Available Workspaces
 
-| Workspace | Purpose | Main scripts |
-| --- | --- | --- |
-| `client` | React + Vite frontend | `dev`, `build`, `lint`, `preview` |
-| `blog` | Next.js blog app | `dev`, `build`, `start`, `lint` |
-| `server` | Express API server | `dev`, `build`, `start` |
-| `@local/utils` | Shared TypeScript utilities | `build`, `clean` |
+| Workspace      | Purpose                     | Main scripts                      |
+| -------------- | --------------------------- | --------------------------------- |
+| `client`       | React + Vite frontend       | `dev`, `build`, `lint`, `preview` |
+| `blog`         | Next.js blog app            | `dev`, `build`, `start`, `lint`   |
+| `server`       | Express API server          | `dev`, `build`, `start`           |
+| `@local/utils` | Shared TypeScript utilities | `build`, `clean`                  |
 
 ## Shared Utilities
 
