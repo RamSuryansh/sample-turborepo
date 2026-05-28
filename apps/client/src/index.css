@@ -1,0 +1,74 @@
+:root {
+  --page: #f4f6f8;
+  --surface: #ffffff;
+  --line: #d8e0e7;
+  --ink: #122033;
+  --muted: #4f6072;
+  --muted-strong: #5f7083;
+  --brand: #526b84;
+  --shadow-soft: 0 10px 32px rgba(16, 26, 36, 0.06);
+
+  --sans:
+    'Aptos', 'Segoe UI', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--muted);
+  background: var(--page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--muted);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  width: min(1140px, 100%);
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 15px;
+  }
+}
